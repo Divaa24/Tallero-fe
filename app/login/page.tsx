@@ -59,28 +59,28 @@ export default function LoginPage() {
             </div>
 
             {/* Field Password */}
-            <div>
-              <label className="block text-xs font-medium text-gray-200 mb-2">
-                Password
-              </label>
-              <div className="relative">
-                <input
-                  type={showPassword ? 'text' : 'password'}
-                  placeholder="••••••"
-                  value={formData.password}
-                  onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                  className="w-full bg-white/10 text-white placeholder-gray-400 rounded-2xl px-5 py-3.5 pr-12 border border-white/10 focus:outline-none focus:border-tallero-amber focus:ring-1 focus:ring-tallero-amber transition-all text-sm"
-                  required
-                />
-                <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 hover:text-white transition-colors"
-                >
-                  <i className={`fa-solid ${showPassword ? 'fa-eye-slash' : 'fa-eye'}`}></i>
-                </button>
+              <div>
+                <label className="block text-xs font-medium text-gray-200 mb-2">
+                  Password
+                </label>
+                <div className="relative">
+                  <input
+                    type={showPassword ? 'text' : 'password'}
+                    placeholder="••••••"
+                    value={formData.password}
+                    onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                    className="w-full bg-white/10 text-white placeholder-gray-400 rounded-2xl px-5 py-3.5 pr-12 border border-white/10 focus:outline-none focus:border-tallero-amber focus:ring-1 focus:ring-tallero-amber transition-all text-sm"
+                    required
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-300 hover:text-white transition-colors"
+                  >
+                    <i className={`fa-solid ${showPassword ? 'fa-eye-slash' : 'fa-eye'} text-sm`}></i>
+                  </button>
+                </div>
               </div>
-            </div>
 
             {/* Tombol Masuk */}
             <button
