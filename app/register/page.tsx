@@ -104,7 +104,7 @@ export default function RegisterPage() {
                   </button>
                 </div>
               </div>
-
+     
               {/* Ulangi Password */}
               <div>
                 <label className="block text-xs font-medium text-gray-200 mb-2">
