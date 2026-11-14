@@ -50,7 +50,9 @@ export default function OutletsPage() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-slate-200">
         <div>
           <h1 className="text-xl font-bold text-[#013C58]">Data Outlet Bengkel</h1>
-          <p className="text-xs text-slate-500">Kelola informasi lokasi cabang, kapasitas pit, dan jam operasional bengkel.</p>
+          <p className="text-xs text-slate-500">
+            Kelola informasi lokasi cabang, kapasitas pit, dan jam operasional bengkel.
+          </p>
         </div>
         <button className="px-4 py-2 rounded-xl bg-[#013C58] hover:bg-[#00537A] text-white font-bold text-xs transition-all flex items-center gap-2 shadow-sm">
           <i className="fa-solid fa-plus text-[#F5A201]"></i>
@@ -92,7 +94,9 @@ export default function OutletsPage() {
                 </div>
                 <span
                   className={`text-[10px] font-bold px-2.5 py-1 rounded-full ${
-                    item.status === 'Aktif' ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-500'
+                    item.status === 'Aktif'
+                      ? 'bg-emerald-100 text-emerald-800'
+                      : 'bg-slate-100 text-slate-500'
                   }`}
                 >
                   {item.status}
@@ -129,7 +133,7 @@ export default function OutletsPage() {
                 Edit Outlet
               </button>
               <button className="text-[#00537A] font-bold hover:underline">
-                Lihat Jadwal Pit →
+                Lihat Jadwal Pit
               </button>
             </div>
           </div>
